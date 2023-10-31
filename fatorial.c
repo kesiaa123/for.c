@@ -5,10 +5,11 @@ int main(){
     //fatorial de um numero
     int num, fatorial = 1, i= 1;
 
-    
-    for(num; num<=0; num){
     printf("digite um numero para calcular seu fatorial: \n ");
     scanf("%i", &num);
+    
+    for(num; num<=0; num++){
+    
          if(num < 0){
             printf("numero invalido\n");
     
@@ -18,9 +19,7 @@ int main(){
         }
     }
     for(i; i<=num; i++){
-        fatorial *= i;
-    
-    }if(num > 0){
-         printf("fatorial = %i\n", fatorial);
+      fatorial *= i;
     }
+     printf("fatorial = %i\n", fatorial);
 }
